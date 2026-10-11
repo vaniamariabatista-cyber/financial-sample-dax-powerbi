@@ -6,17 +6,20 @@ Projeto de apoio ao desafio DIO baseado no documento de instruções disponibili
 
 ## Artefatos
 
-- `power_query/00_preparacao.md`: como importar e nomear a tabela de origem.
-- `power_query/01_D_Produtos.m`: agrupamento por produto e métricas pedidas no enunciado.
-- `power_query/02_D_Produtos_Detalhes.m`: detalhes por combinação de produto, faixa de desconto, preço, unidades e custo de fabricação.
-- `power_query/03_D_Descontos.m`: dimensão de descontos.
-- `power_query/04_D_Detalhes.m`: dimensão complementar com Segment e Country, campos descritivos que não aparecem como dimensões separadas no enunciado.
-- `power_query/05_F_Vendas.m`: tabela fato e chaves para relacionamentos.
-- `dax/01_D_Calendario.dax`: tabela calendário usando `CALENDAR()`.
-- `dax/02_medidas.dax`: medidas DAX básicas para vendas, lucro, unidades e margem.
-- `diagrama/diagrama_star_schema.mmd`: fonte Mermaid do diagrama.
-- `diagrama/diagrama_star_schema.svg` e `.png`: visualização do modelo proposto.
+## Artefatos
 
+- `00_PREPARACAO_POWER_QUERY.md`: instruções para importar e nomear a tabela de origem.
+- `01_D_Produtos.m`: dimensão de produtos e métricas agregadas.
+- `02_D_Produtos_Detalhes.m`: detalhes dos produtos.
+- `03_D_Descontos.m`: dimensão de descontos.
+- `04_D_Detalhes.m`: dimensão complementar de segmento e país.
+- `05_F_Vendas.m`: tabela fato de vendas.
+- `06_D_Calendario.dax`: criação da dimensão calendário.
+- `07_medidas.dax`: medidas DAX básicas.
+- `08_VALIDACAO.md`: checklist de validação.
+- `diagrama_star_schema.mmd`: código-fonte Mermaid do diagrama.
+- `diagrama_star_schema.png` e `diagrama_star_schema.svg`: versões visuais do modelo.
+- 
 ## Etapas de construção
 
 1. Importar o arquivo Financial Sample no Power BI e renomear a consulta/tabela de origem para `Financials_origem`. Manter essa consulta como backup e ocultá-la no relatório/modelo, conforme solicitado pelo enunciado.
