@@ -1,0 +1,13 @@
+D_Calendário =
+ADDCOLUMNS(
+    CALENDAR(
+        MIN(F_Vendas[Date]),
+        MAX(F_Vendas[Date])
+    ),
+    "Ano", YEAR([Date]),
+    "Mês número", MONTH([Date]),
+    "Mês", FORMAT([Date], "MMMM"),
+    "Trimestre", "T" & FORMAT([Date], "Q"),
+    "Dia", DAY([Date]),
+    "Dia da semana", FORMAT([Date], "dddd")
+)

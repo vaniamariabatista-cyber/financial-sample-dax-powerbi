@@ -1,0 +1,7 @@
+Total Vendas = SUM(F_Vendas[Sales])
+
+Total Lucro = SUM(F_Vendas[Profit])
+
+Total Unidades Vendidas = SUM(F_Vendas[Units Sold])
+
+Margem de Lucro = DIVIDE([Total Lucro], [Total Vendas])

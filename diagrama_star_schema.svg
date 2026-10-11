@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<defs><style>.bg{fill:#f5f7fb}.box{fill:#fff;stroke:#334155;stroke-width:2;rx:16}.fact{fill:#fff4e5;stroke:#c2410c;stroke-width:3;rx:18}.head{font:700 24px sans-serif;fill:#0f172a}.txt{font:18px sans-serif;fill:#334155}.link{stroke:#64748b;stroke-width:3;fill:none}.label{font:16px sans-serif;fill:#475569;font-weight:600}</style></defs>
+<rect class="bg" width="1400" height="900"/>
+<text x="700" y="48" text-anchor="middle" class="head" style="font-size:30px">Star Schema — Financial Sample</text>
+<!-- relationship lines first -->
+<path class="link" d="M280 220 V385 H570 V480"/><path class="link" d="M700 220 V390 H700 V480"/><path class="link" d="M1120 220 V385 H840 V480"/><path class="link" d="M280 650 V610 H570 V575"/><path class="link" d="M1120 650 V610 H840 V575"/>
+<text x="398" y="375" class="label">1 : *</text><text x="715" y="375" class="label">1 : *</text><text x="941" y="375" class="label">1 : *</text><text x="400" y="635" class="label">1 : *</text><text x="942" y="635" class="label">1 : *</text>
+<rect class="box" x="55" y="100" width="450" height="120"/><text x="280" y="137" text-anchor="middle" class="head">D_Produtos</text><text x="280" y="171" text-anchor="middle" class="txt">ID_produto (PK), Product</text><text x="280" y="198" text-anchor="middle" class="txt">Média, mediana, máximo e mínimo</text>
+<rect class="box" x="530" y="100" width="340" height="120"/><text x="700" y="137" text-anchor="middle" class="head">D_Produtos_Detalhes</text><text x="700" y="171" text-anchor="middle" class="txt">SK_Produto_Detalhe (PK)</text><text x="700" y="198" text-anchor="middle" class="txt">Preço, unidades, custo, faixa</text>
+<rect class="box" x="895" y="100" width="450" height="120"/><text x="1120" y="137" text-anchor="middle" class="head">D_Descontos</text><text x="1120" y="171" text-anchor="middle" class="txt">SK_Desconto (PK), ID_produto</text><text x="1120" y="198" text-anchor="middle" class="txt">Discount, Discount Band</text>
+<rect class="fact" x="450" y="480" width="500" height="130"/><text x="700" y="518" text-anchor="middle" class="head">F_Vendas</text><text x="700" y="551" text-anchor="middle" class="txt">SK_ID (PK), IDs de dimensão, Produto</text><text x="700" y="578" text-anchor="middle" class="txt">Units Sold, Sales Price, Sales, Profit, Date</text>
+<rect class="box" x="55" y="650" width="450" height="120"/><text x="280" y="687" text-anchor="middle" class="head">D_Detalhes</text><text x="280" y="721" text-anchor="middle" class="txt">ID_Detalhes (PK)</text><text x="280" y="748" text-anchor="middle" class="txt">Segment, Country (proposta)</text>
+<rect class="box" x="895" y="650" width="450" height="120"/><text x="1120" y="687" text-anchor="middle" class="head">D_Calendário</text><text x="1120" y="721" text-anchor="middle" class="txt">Date (PK)</text><text x="1120" y="748" text-anchor="middle" class="txt">Ano, Mês, Trimestre, Dia da semana</text>
+<text x="700" y="844" text-anchor="middle" class="txt">Modelo proposto com dimensões filtrando a tabela fato (1:*); validar no Power BI.</text>
+</svg>

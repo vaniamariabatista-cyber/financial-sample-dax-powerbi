@@ -1,0 +1,12 @@
+flowchart TB
+    DP["D_Produtos<br/>ID_produto (PK)<br/>Product<br/>Médias, mediana, max e min"]
+    DPD["D_Produtos_Detalhes<br/>SK_Produto_Detalhe (PK)<br/>ID_produto, Discount Band<br/>Sale Price, Units Sold, Manufacturing Price"]
+    DD["D_Descontos<br/>SK_Desconto (PK)<br/>ID_produto, Discount, Discount Band"]
+    DET["D_Detalhes<br/>ID_Detalhes (PK)<br/>Segment, Country"]
+    CAL["D_Calendário<br/>Date (PK)<br/>Ano, Mês, Trimestre, Dia"]
+    F["F_Vendas<br/>SK_ID (PK)<br/>ID_Produto / SK_Produto_Detalhe<br/>SK_Desconto / ID_Detalhes<br/>Produto, Units Sold, Sales Price<br/>Discount Band, Segment, Country<br/>Sales, Profit, Date"]
+    DP -->|ID_produto 1:*| F
+    DPD -->|SK_Produto_Detalhe 1:*| F
+    DD -->|SK_Desconto 1:*| F
+    DET -->|ID_Detalhes 1:*| F
+    CAL -->|Date 1:*| F
